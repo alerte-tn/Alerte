@@ -6,18 +6,20 @@
 
 <title>Alerti</title>
 
-<meta http-equiv="refresh" content="0; url=https://alerti.base44.app">
-
 <style>
-body {
+html, body {
     margin:0;
+    padding:0;
+    height:100%;
     background:#000;
+    overflow:hidden;
+}
+
+#loading {
     color:white;
-    font-family:Arial, sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    text-align:center;
+    margin-top:50%;
+    font-family:Arial;
 }
 </style>
 
@@ -25,7 +27,13 @@ body {
 
 <body>
 
-<p>Chargement de Alerti...</p>
+<div id="loading">
+    Chargement Alerti...
+</div>
+
+<script>
+window.location.replace("https://alerti.base44.app");
+</script>
 
 </body>
 </html>
