@@ -2,49 +2,48 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
 <title>Alerti</title>
 
 <style>
-html,body{
-    margin:0;
-    width:100%;
-    height:100%;
-    overflow:hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#container{
-    position:fixed;
-    inset:0;
-    overflow:hidden;
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
 }
 
-iframe{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:calc(100% + 120px);
-    border:none;
+body {
+    position: fixed;
+    inset: 0;
 }
 
-#masque{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:120px;
-    background:#000;
-    z-index:999999;
+iframe {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
 </style>
 
 </head>
+
 <body>
 
-<div id="container">
-    <iframe src="https://tunisie.lovable.app/"></iframe>
-    <div id="masque"></div>
-</div>
+<iframe
+    src="https://tunisie.lovable.app/"
+    allow="geolocation; camera; microphone; fullscreen"
+    allowfullscreen>
+</iframe>
 
 </body>
 </html>
